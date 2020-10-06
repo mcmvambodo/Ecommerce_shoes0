@@ -1,6 +1,7 @@
 {
-  "extends": "./tsconfig.json",
+  "extends": "./tsconfig.base.json",
   "compilerOptions": {
+    "experimentalDecorators": true,
     "outDir": "./out-tsc/app",
     "types": []
   },
@@ -9,7 +10,7 @@
     "src/polyfills.ts"
   ],
   "include": [
-    "src/**/*.ts"
+    "src/**/*.d.ts"
   ],
   "exclude": [
     "src/test.ts",
